@@ -1,3 +1,4 @@
+[![RayTests](https://github.com/cyberty-liberty/RayTensor/actions/workflows/raytests.yml/badge.svg)](https://github.com/cyberty-liberty/RayTensor/actions/workflows/raytests.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![version](https://img.shields.io/badge/version-4.0_Release-blue)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
