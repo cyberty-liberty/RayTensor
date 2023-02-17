@@ -75,7 +75,7 @@ class RayTensor:
         model.save("xray_model.h5")
 
     def xray_predict(self, path_to_image):
-        model = keras.models.load_model("xray_model.h5")
+        model = keras.models.load_model("models/xray_model.h5")
         img = tf.keras.utils.load_img(
             path_to_image, target_size=(self.xray_img_height, self.xray_img_width)
         )
@@ -311,7 +311,7 @@ class RayTensor:
         model.save("ct_model_beta.h5")
 
     def ct_predict(self, path_to_image):
-        model = keras.models.load_model("ct_model.h5")
+        model = keras.models.load_model("models/ct_model.h5")
         img = tf.keras.utils.load_img(
             path_to_image, target_size=(self.ct_img_height, self.ct_img_width)
         )
