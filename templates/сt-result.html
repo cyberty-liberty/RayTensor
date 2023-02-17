@@ -1,0 +1,21 @@
+{% include 'header.html' %}
+<head>
+    <title>Результаты анализа КТ</title>
+</head>
+<img src="static/images/test.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" width="500" height="500">
+<h1 align="center">С вероятностью {{ predict[2] | round(2)}}% у Вас {{ predict[3] }}.</h1>
+<div align="center">
+        <h1> </h1>
+    <a href="/ct-request">
+    <button type="submit" class="btn btn-primary">Проверить ещё снимок</button>
+    </a>
+    <a href="/">
+    <button type="submit" class="btn btn-primary">На главную</button>
+    </a>
+    </div>
+<div>
+    <h3>Другие возможные диагнозы:</h3>
+    <h3>Вероятность пневмонии: {{ predict[1][2] | round(2)}}%</h3>
+    <h3>Вероятность COVID-19: {{ predict[1][0] | round(2)}}%</h3>
+    <h3>С лёгкими всё в порядке: {{ predict[1][1] | round(2)}}%</h3>
+</div>
